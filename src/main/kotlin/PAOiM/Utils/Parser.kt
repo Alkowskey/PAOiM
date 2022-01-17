@@ -1,7 +1,7 @@
-package template.Utils
+package PAOiM.Utils
 
 import com.google.gson.Gson
-import template.Models.Post
+import PAOiM.Models.Post
 
 class Parser {
     fun parse(json: String): Array<Post>? {

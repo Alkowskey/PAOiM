@@ -1,18 +1,14 @@
-package template
+package PAOiM
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.swing.Swing
-import template.Providers.PostProvider
-import template.Utils.Parser
+import PAOiM.Providers.PostProvider
+import PAOiM.Utils.Parser
 import java.awt.Dimension
 import javax.swing.*
 import javax.swing.table.DefaultTableModel
-
-
-
-
 
 fun main() {
     GlobalScope.launch(Dispatchers.Swing) {
@@ -49,7 +45,7 @@ fun main() {
                     model.addRow(data)
                 }
             }
-            label.text = "Hello world"
+            label.text = "Updated posts"
         }
 
         frame.add(label)
