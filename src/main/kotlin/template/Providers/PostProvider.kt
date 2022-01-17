@@ -9,7 +9,6 @@ import java.net.http.HttpResponse
 
 class PostProvider {
     fun sendGet(): String {
-        val url = URL("https://jsonplaceholder.typicode.com/posts")
         val client = HttpClient.newBuilder().build();
         val request = HttpRequest.newBuilder()
             .uri(URI.create("https://jsonplaceholder.typicode.com/posts"))
